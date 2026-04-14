@@ -7,6 +7,10 @@ const ProfilePreview = () => {
     <div className="rounded-2xl border border-gray-200 bg-white p-9 shadow-sm transition-all hover:shadow-md w-107.5">
       <h1 className="text-black font-medium text-lg">Profile Preview</h1>
       {/* Profile Image */}
+
+
+
+      
       <div className="flex justify-center">
         <Image
           src={"/"}

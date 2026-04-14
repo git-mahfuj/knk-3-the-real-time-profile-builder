@@ -3,6 +3,10 @@
 import { User } from "lucide-react";
 import React, { createContext, useContext, useState } from "react";
 
+interface LinkType {
+  platform: string;
+  url: string;
+}
 interface UserType {
   name?: string;
   email?: string;
@@ -11,8 +15,8 @@ interface UserType {
     file: File;
     url: string;
   };
-  links?:[
-    
+  links?:LinkType[
+
   ]
 }
 type UserContextType = {

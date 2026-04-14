@@ -12,9 +12,9 @@ const ProfilePreview = () => {
       <h1 className="text-black font-medium text-lg">Profile Preview</h1>
       {/* Profile Image */}
 
-      <div className="flex justify-center">
+      <div className="flex justify-center w-75">
         <Image
-          src={user?.image?.url || ""}
+          src={user?.image?.url as string}
           width={50}
           height={50}
           alt={user?.name || ""}
@@ -31,7 +31,7 @@ const ProfilePreview = () => {
           <span>{user?.email}</span>
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-gray-600">
+        <p className="mt-3 text-sm text-gray-600 w-75">
           {user?.bio}
         </p>
       </div>
